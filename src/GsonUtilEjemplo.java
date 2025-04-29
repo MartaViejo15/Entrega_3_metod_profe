@@ -9,7 +9,6 @@ import java.io.IOException;
    metodos sin tener que crear un objeto de la clase. EN EL CONSTRUCTOR no haria falta usar
    el modificador static, ya que el constructor es lo que tenemos que instanciar.
 
-   Falta el que esta pasando
 */
 public class GsonUtilEjemplo {
     // Metodo para guardar un objeto en un archivo JSON

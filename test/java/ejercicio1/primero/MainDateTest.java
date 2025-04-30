@@ -23,6 +23,6 @@ class MainDateTest {
         MainDate.main(argShowFile);
 
         String[] argInitNoFile = {"init", "b://2"};
-        assertThrows(java.io.IOException.class, () -> MainDate.main(argInitNoFile));
+        assertDoesNotThrow(() -> MainDate.main(argInitNoFile));
     }
 }

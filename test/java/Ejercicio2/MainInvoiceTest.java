@@ -1,28 +1,29 @@
-package ejercicio1.primero;
+package Ejercicio2;
 
+import ejercicio1.primero.MainAuthor;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MainAuthorTest {
+class MainInvoiceTest {
 
     @Test
     void main() {
-        String fichero = "autor.json";
+        String fichero = "recibo.json";
 
         String[] args = {"hola", fichero};
-        MainAuthor.main(args);
+        MainInvoice.main(args);
 
         String[] argShowNoFile = {"show", "fichero.json"};
-        MainAuthor.main(argShowNoFile);
+        MainInvoice.main(argShowNoFile);
 
         String[] argInit = {"init", fichero};
-        MainAuthor.main(argInit);
+        MainInvoice.main(argInit);
 
         String[] argShowFile = {"show", fichero};
-        MainAuthor.main(argShowFile);
+        MainInvoice.main(argShowFile);
 
         String[] argInitNoFile = {"init", "b://2"};
-        assertDoesNotThrow(() -> MainAuthor.main(argInitNoFile));
+        assertDoesNotThrow(() -> MainInvoice.main(argInitNoFile));
     }
 }

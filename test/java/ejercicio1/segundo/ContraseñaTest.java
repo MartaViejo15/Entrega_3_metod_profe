@@ -9,7 +9,7 @@ class ContraseñaTest {
     @Test
     void contraseña() {
         assertThrows(ContraseñaExcepción.class, () -> Contraseña.contraseña("asdawsawd"));
-        assertDoesNotThrow(() -> Contraseña.contraseña("9876matecompu"));
+        assertDoesNotThrow(() -> Contraseña.contraseña("9876matecompu#"));
     }
 
     @Test

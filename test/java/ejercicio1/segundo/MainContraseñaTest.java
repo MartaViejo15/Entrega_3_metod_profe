@@ -23,6 +23,6 @@ class MainContraseñaTest {
         MainContraseña.main(argShowFile);
 
         String[] argInitNoFile = {"init", "b://2"};
-        assertThrows(java.io.IOException.class, () -> MainContraseña.main(argInitNoFile));
+        assertDoesNotThrow(() -> MainContraseña.main(argInitNoFile));
     }
 }

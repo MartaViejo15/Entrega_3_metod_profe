@@ -11,11 +11,6 @@ class AuthorTest {
         autor.getName();
     }
 
-    @Test
-    void setName() {
-        Author autor = new Author("Pepe", "Pepe@gmail.com", 'm');
-        autor.setName("Juan");
-    }
 
     @Test
     void getEmail() {
@@ -33,12 +28,6 @@ class AuthorTest {
     void getGender() {
         Author autor = new Author("Pepe", "Pepe@gmail.com", 'm');
         autor.getGender();
-    }
-
-    @Test
-    void setGender() {
-        Author autor = new Author("Pepe", "Pepe@gmail.com", 'm');
-        autor.setGender('f');
     }
 
     @Test

@@ -1,4 +1,4 @@
-package ejercicio1.primero;
+package Ejercicio2;
 
 public class Author {
     private String name;

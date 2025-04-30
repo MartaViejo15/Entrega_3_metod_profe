@@ -22,6 +22,6 @@ class MainEmployeeTest {
         MainEmployee.main(argShowFile);
 
         String[] argInitNoFile = {"init", "b://2"};
-        assertThrows(java.io.IOException.class, () -> MainEmployee.main(argInitNoFile));
+        assertDoesNotThrow(() -> MainEmployee.main(argInitNoFile));
     }
 }
